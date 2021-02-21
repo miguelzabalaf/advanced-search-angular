@@ -1,0 +1,14 @@
+<div class="results">
+  <div *ngFor="let product of results.slice(0, 3)" class="results__product">
+    <picture class="results__product--img">
+      <img [src]="product.img_url" [alt]="product.name">
+    </picture>
+    <div class="results__product--details">
+      <h5>{{ product.name }}</h5>
+
+    </div>
+  </div>
+  <div *ngIf="results.length > 3" class="results__see-all-products">
+    <p>See all matches</p>
+  </div>
+</div>

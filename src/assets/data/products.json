@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "slug": "iphone-11-pro-max-128gb",
+    "name": "iPhone 11 Pro Max - 128GB",
+    "img_url": "https://falabella.scene7.com/is/image/FalabellaCO/4153290_5?wid=800&hei=800&qlt=70",
+    "price": 1500,
+    "in_offer": true,
+    "offer_price": 1400,
+    "categories": ["Phone"],
+    "score": 4.8
+  },
+  {
+    "id": "2",
+    "slug": "samsung-galaxy-a21s",
+    "name": "Samsung Galaxy A21S",
+    "img_url": "https://img.nieuwemobiel.nl/samsung-galaxy-a21s-color-overview-5eec7a911b296.jpg",
+    "price": 210,
+    "in_offer": false,
+    "categories": ["Phone"],
+    "score": 4.0
+  },
+  {
+    "id": "3",
+    "slug": "tv-samsung-50-4k",
+    "name": "TV Samsung 50' 4K",
+    "img_url": "https://http2.mlstatic.com/D_NQ_NP_2X_821714-MCO42800800905_072020-F.webp",
+    "price": 450,
+    "in_offer": false,
+    "categories": ["TV"],
+    "score": 4.0
+  }
+]

@@ -4,6 +4,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AdvancedSearchComponent } from './advanced-search/advanced-search.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
+import { AdvancedSearchResultsComponent } from './advanced-search-results/advanced-search-results.component';
 
 
 
@@ -11,12 +12,14 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     MenuComponent,
     AdvancedSearchComponent,
-    HeaderComponent
+    HeaderComponent,
+    AdvancedSearchResultsComponent
   ],
   exports: [
     MenuComponent,
     AdvancedSearchComponent,
     HeaderComponent,
+    AdvancedSearchResultsComponent
   ],
   imports: [
     CommonModule,
