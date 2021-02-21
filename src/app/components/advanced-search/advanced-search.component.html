@@ -1,6 +1,12 @@
 <div class="advanced-search">
   <div class="advanced-search__input">
-    <input type="text">
+    <input type="text"
+           placeholder="Phone, TV, accessories and more.."
+           [(ngModel)]="term"
+           (keyup)="search(term)">
+    <div class="results">
+
+    </div>
   </div>
   <div class="advanced-search__options">
     <div class="advanced-search__options--select"></div>

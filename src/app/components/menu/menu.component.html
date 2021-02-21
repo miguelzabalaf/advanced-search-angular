@@ -2,8 +2,6 @@
   <picture class="logo">
   </picture>
   <div class="menu-content">
-    <a href="#">Products</a>
-    <a href="#">On Sale</a>
-    <a href="#">Renew</a>
+    <a *ngFor="let option of menuOptions" href="#">{{ option.name }}</a>
   </div>
 </div>
