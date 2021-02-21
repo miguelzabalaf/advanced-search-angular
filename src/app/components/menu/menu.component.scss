@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  .logo {
+    background-color: #eee;
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin-right: 25px;
+  }
+  .menu-content {
+    a {
+      margin-right: 25px;
+      color: #445b78;
+      text-decoration: none;
+      transition: all 0.3s;
+      &:hover {
+        color: #3880ff;
+      }
+    }
+  }
+}

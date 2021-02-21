@@ -1,0 +1,39 @@
+.advanced-search {
+  height: 45px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  &__input {
+    height: 30px;
+    flex: 1;
+    input {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+  }
+  &__options {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    &--select {
+      border: 1px solid gray;
+      height: 30px;
+      flex: 1;
+    }
+    &--icon {
+      width: 45px;
+      height: 45px;
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
