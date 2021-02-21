@@ -1,0 +1,46 @@
+.header {
+  background-color: #fff;
+  height: 70px;
+  &__content {
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: spac;
+    padding: 0 15px;
+    &--menu {
+      .menu {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        .logo {
+          background-color: #eee;
+          width: 45px;
+          height: 45px;
+          display: block;
+          margin-right: 25px;
+        }
+        .menu {
+          a {
+            margin-right: 25px;
+            color: #445b78;
+            text-decoration: none;
+            transition: all 0.3s;
+            &:hover {
+              color: #3880ff;
+            }
+          }
+        }
+      }
+    }
+    &--advanced-search {
+      flex: 1;
+      .advanced-search {
+        height: 45px;
+        background-color: #eee;
+        border-radius: 10px;
+      }
+    }
+  }
+}
