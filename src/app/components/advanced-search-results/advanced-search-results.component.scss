@@ -16,8 +16,8 @@
       cursor: pointer;
     }
     &--img {
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       border-radius: 10px;
       overflow: hidden;
       margin-right: 10px;
@@ -31,6 +31,30 @@
       h5 {
         font-weight: 500;
         color: #445b78;
+      }
+      .price-and-score {
+        display: flex;
+        .price {
+          font-size: 12px;
+          font-weight: 400;
+          color: rgba(68, 92, 120, 0.75);
+        }
+        .separator {
+          font-size: 12px;
+          color: rgba(68, 92, 120, 0.35);
+        }
+        .offer-price {
+          margin-left: 5px;
+          color: #3880ff;
+        }
+        .score {
+          font-size: 12px;
+          font-weight: 400;
+          color: rgba(68, 92, 120, 0.75);
+          .star {
+            color: gold;
+          }
+        }
       }
     }
   }

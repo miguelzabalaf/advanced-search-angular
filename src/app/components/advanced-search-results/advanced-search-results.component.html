@@ -5,7 +5,11 @@
     </picture>
     <div class="results__product--details">
       <h5>{{ product.name }}</h5>
-
+      <div class="price-and-score">
+        <span class="price">Price: <span [ngClass]="{'line-through': product.in_offer}">{{ product.price | currency }}</span> <span class="offer-price" *ngIf="product.offer_price">{{ product.offer_price | currency }}</span></span>
+        <span class="separator">•</span>
+        <span class="score">Score: {{ product.score | number }} <span class="star"></span> ★</span>
+      </div>
     </div>
   </div>
   <div *ngIf="results.length > 3" class="results__see-all-products">

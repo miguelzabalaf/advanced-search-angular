@@ -5,7 +5,7 @@
            [(ngModel)]="term"
            (keyup)="search(term)">
           </div>
-  <app-advanced-search-results *ngIf="term.trim().length > 0" [results]="results"></app-advanced-search-results>
+  <app-advanced-search-results  [results]="results"></app-advanced-search-results>
   <div class="advanced-search__options">
     <div class="advanced-search__options--select"></div>
     <div class="advanced-search__options--icon">

@@ -14,12 +14,6 @@ export class AdvancedSearchComponent implements OnInit {
   results: Product[] = [];
 
   constructor( private productsService: ProductsService ) {
-  }
-
-  ngOnInit(): void {
-  }
-
-  search(term: string): void {
     this.productsService.getProducts()
       .subscribe( products => {
         console.log(products)
@@ -27,6 +21,19 @@ export class AdvancedSearchComponent implements OnInit {
       }, err => {
         console.error(err)
       } )
+  }
+
+  ngOnInit(): void {
+  }
+
+  search(term: string): void {
+    // this.productsService.getProducts()
+    //   .subscribe( products => {
+    //     console.log(products)
+    //     this.results = products;
+    //   }, err => {
+    //     console.error(err)
+    //   } )
   }
 
 }
