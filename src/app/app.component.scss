@@ -1,16 +1,12 @@
-.header {
-  background-color: #fff;
-  height: 70px;
-  &__content {
-    height: 100%;
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: spac;
-    padding: 0 15px;
-    &--advanced-search {
-      flex: 1;
-    }
+img {
+  margin: auto;
+  display: block;
+  margin-top: 25vh;
+  max-width: 35%;
+}
+
+@media screen and (max-width: 525px) {
+  img {
+    min-width: 75%;
   }
 }
