@@ -12,7 +12,6 @@ import { SelectOption } from '../../interfaces/interfaces';
 export class AdvancedSearchComponent implements OnInit {
 
   public term: string = "";
-
   public results: Product[] = [];
   public selectOpts: SelectOption[] = [];
   public filteredBy!: SelectOption;
