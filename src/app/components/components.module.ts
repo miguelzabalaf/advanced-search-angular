@@ -5,6 +5,7 @@ import { AdvancedSearchComponent } from './advanced-search/advanced-search.compo
 import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { AdvancedSearchResultsComponent } from './advanced-search-results/advanced-search-results.component';
+import { SelectComponent } from './select/select.component';
 
 
 
@@ -13,13 +14,15 @@ import { AdvancedSearchResultsComponent } from './advanced-search-results/advanc
     MenuComponent,
     AdvancedSearchComponent,
     HeaderComponent,
-    AdvancedSearchResultsComponent
+    AdvancedSearchResultsComponent,
+    SelectComponent
   ],
   exports: [
     MenuComponent,
     AdvancedSearchComponent,
     HeaderComponent,
-    AdvancedSearchResultsComponent
+    AdvancedSearchResultsComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule,

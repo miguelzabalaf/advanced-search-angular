@@ -9,6 +9,8 @@ import { Product } from 'src/app/interfaces/interfaces';
 export class AdvancedSearchResultsComponent implements OnInit {
 
   @Input() results: Product[] = [];
+  @Input() term: string = '';
+  @Input() categoryFiltered: string = '';
 
   constructor() { }
 

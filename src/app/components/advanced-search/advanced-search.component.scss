@@ -9,6 +9,7 @@
   &__input {
     height: 30px;
     flex: 1;
+    position: relative;
     input {
       height: 100%;
       width: 100%;
@@ -16,10 +17,27 @@
       outline: none;
       background-color: transparent;
       font-weight: 400;
+      color: #445b78;
+    }
+    .reset-input {
+      position: absolute;
+      right: 0;
+      top: 5px;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: #dedede;
+      }
     }
   }
   &__options {
-    width: 250px;
+    width: 205px;
     display: flex;
     align-items: center;
     justify-content: space-between;

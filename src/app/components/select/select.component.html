@@ -1,0 +1,10 @@
+<div class="select">
+  <div (click)="openCloseOptions()" class="select__selected">
+    <p>{{ selectedOption.name }}</p>
+  </div>
+  <div *ngIf="isOpenOptions" class="select__options">
+    <div (click)="selectOption(option)"  [ngClass]="{'selectedOpt': option.name === selectedOption.name}" *ngFor="let option of options" class="select__options--option">
+      <p [ngClass]="{'selectedOpt': option.name === selectedOption.name}">{{ option.name }}</p>
+    </div>
+  </div>
+</div>

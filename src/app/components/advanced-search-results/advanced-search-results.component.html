@@ -13,6 +13,9 @@
     </div>
   </div>
   <div *ngIf="results.length > 3" class="results__see-all-products">
-    <p>See all matches</p>
+    <p>See all results ( {{ results.length - 3 }} more )</p>
+  </div>
+  <div *ngIf="results.length === 0" class="results__not-found">
+    <p>Sorry, we did not find any product named <strong>{{ term }}</strong> in the {{ categoryFiltered }} category.</p>
   </div>
 </div>

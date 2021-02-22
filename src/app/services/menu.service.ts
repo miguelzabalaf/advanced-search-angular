@@ -19,8 +19,8 @@ export class MenuService {
     },
     {
       id: '1',
-      slug: 'products',
-      name: 'Products'
+      slug: 'log-in',
+      name: 'Log In'
     },
   ]
 

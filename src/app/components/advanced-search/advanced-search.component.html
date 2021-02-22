@@ -3,11 +3,22 @@
     <input type="text"
            placeholder="Phone, TV, accessories and more.."
            [(ngModel)]="term"
-           (keyup)="search(term)">
-          </div>
-  <app-advanced-search-results  [results]="results"></app-advanced-search-results>
+           (keyup)="search()">
+    <div *ngIf="term.length > 0"
+         class="reset-input"
+         (click)="resetInput()">
+      <img src="/assets/icons/close-outline.svg" alt="close">
+    </div>
+  </div>
+  <app-advanced-search-results *ngIf="term.trim().length > 0"
+                               [results]="results"
+                               [term]="term"
+                               [categoryFiltered]="filteredBy.name"></app-advanced-search-results>
   <div class="advanced-search__options">
-    <div class="advanced-search__options--select"></div>
+    <div class="advanced-search__options--select">
+      <app-select [options]="selectOpts"
+                  (onSelectedChange)="filterChange($event)"></app-select>
+    </div>
     <div class="advanced-search__options--icon">
       <img src="/assets/icons/search-outline.svg" alt="">
     </div>

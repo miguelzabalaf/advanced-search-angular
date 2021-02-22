@@ -29,5 +29,37 @@
     "in_offer": false,
     "categories": ["TV"],
     "score": 4.0
+  },
+  {
+    "id": "4",
+    "slug": "travel-adapter-samsung",
+    "name": "Traver Adapter Samsung",
+    "img_url": "https://typtecnologia.com/wp-content/uploads/2019/10/cargador-rapido-samsung-original-15w-accesorios-vshop-international.jpg",
+    "price": 7,
+    "in_offer": true,
+    "offer_price": 5,
+    "categories": ["Accessory"],
+    "score": 4.6
+  },
+  {
+    "id": "5",
+    "slug": "case-for-iphone-xs-max",
+    "name": "Case for iPhome XS Max",
+    "img_url": "https://images-na.ssl-images-amazon.com/images/I/618yRKlFOOL._AC_SL1200_.jpg",
+    "price": 12,
+    "in_offer": false,
+    "categories": ["Accessory"],
+    "score": 4.9
+  },
+  {
+    "id": "5",
+    "slug": "xiaomi-redmi-note-9",
+    "name": "Xiaomi Redmi Note 9",
+    "img_url": "https://images-na.ssl-images-amazon.com/images/I/6147ZT4PeFL._AC_SL1000_.jpg",
+    "price": 515,
+    "in_offer": true,
+    "offer_price": 485,
+    "categories": ["Phone"],
+    "score": 4.6
   }
 ]

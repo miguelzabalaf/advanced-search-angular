@@ -1,5 +1,5 @@
 export interface MenuItem {
-  id: string,
+  id:   string,
   slug: string,
   name: string
 }
@@ -14,4 +14,10 @@ export interface Product {
   offer_price?: number;
   categories:   string[];
   score:        number;
+}
+
+export interface SelectOption {
+  id:    string,
+  name:  string,
+  value: string
 }
