@@ -33,6 +33,12 @@
       h5 {
         font-weight: 500;
         color: #445b78;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-align: start;
       }
       .price-and-score {
         display: flex;
@@ -92,5 +98,11 @@
   to {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .detail-label {
+    display: none;
   }
 }
